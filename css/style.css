@@ -18,10 +18,17 @@
 *:after{
     box-sizing: border-box;
 }
-
+::selection{
+  background: var(--accent);
+  color: #fff;
+}
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/fontawesome-webfont.ttf');
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'MTN Brighter Sans';
+  src: url('../fonts/MTN-Brighter-Sans-Regular.otf');
 }
 body{
     background: #fff;
@@ -42,7 +49,7 @@ h1 {
 }
 
 h2 {
-  color: #393939;
+  color: var(--complementary) !important;
   font-size: 2em;
 }
 
@@ -258,10 +265,13 @@ a {
   }
 
   .custom-navbar .navbar-toggle .icon-bar {
-    background: var(--black);
+    background: var(--complementary);
     border-color: transparent;
   }
-
+  .smoothScroll.navbar-link{
+    font-weight: 660 !important;
+    text-transform: uppercase;
+  }
   @media(min-width:768px) {
     .custom-navbar {
       border-bottom: 0;
@@ -274,10 +284,11 @@ a {
       -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       padding: 12px 0;
+      animation: ease 1s;
     }
 
     .top-nav-collapse .navbar-brand {
-      color: var(--black);
+      color: var(--complementary) !important;
     }
 
     .top-nav-collapse .nav li a {
@@ -299,12 +310,6 @@ a {
     overflow: hidden;
     padding-top: 10em;
     text-align: left;
-  }
-  .showcase{
-    background: none !important;
-  }
-  .showcase > .container > .row{
-    /* !Add the gallery showcase here */
   }
   #home h1 {
     color: #ffffff;
@@ -335,6 +340,38 @@ a {
     display: block;
   }
 
+  /* -----------------
+      SHOWCASE
+  ------------------*/
+
+  .showcase{
+    background: none !important;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  #image-track > .image{
+    width: 40vmin;
+    height: 65vmin;
+    object-fit: cover;
+    object-position: 50%;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#image-track{
+    display: flex;
+    gap: 4vmin;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
 /*---------------------------------------
       ABOUT              
   -----------------------------------------*/
@@ -659,7 +696,7 @@ a {
 
     .custom-navbar .navbar-brand,
     .top-nav-collapse .navbar-brand {
-      color: #252525;
+      color: var(--complementary);
       font-weight: 600;
     }
 
