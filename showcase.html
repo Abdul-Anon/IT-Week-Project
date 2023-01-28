@@ -19,7 +19,7 @@
    </section>
 
     <!-- MENU -->
-    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <section class="navbar custom-navbar navbar-fixed-top navbar" role="navigation">
         <div class="container">
 
              <div class="navbar-header">
@@ -34,12 +34,19 @@
              <!-- MENU LINKS -->
              <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav navbar-nav-first">
-                       <li><a href="index.html" class="smoothScroll">Home</a></li>
-                       <li><a href="#" class="smoothScroll">Beginner</a></li>
-                       <li><a href="#" class="smoothScroll">Intermediate</a></li>
-                       <li><a href="#" class="smoothScroll">Advandced</a></li>
-                       <li><a href="#" class="smoothScroll">Quizes</a></li>
-                       <li><a href="#about" class="smoothScroll">About</a></li>
+                         <li><a href="index.html" class="smoothScroll navbar-link">Home</a></li>
+                         <li class="dropdown"><a href="#" class="smoothScroll navbar-link"><span>Level</span> <i class="fa fa-chevron-down"></i></a>
+                              <ul>
+                                   <li><a href="#" class="smoothScroll navbar-link">Beginner</a></li>
+                                   <li><a href="#" class="smoothScroll navbar-link">Intermediate</a></li>
+                                   <li><a href="#" class="smoothScroll navbar-link">Advanced</a></li>
+                              </ul>
+                         </li>
+                       <!-- <li><a href="#" class="smoothScroll navbar-link">Beginner</a></li>
+                       <li><a href="#" class="smoothScroll navbar-link">Intermediate</a></li>
+                       <li><a href="#" class="smoothScroll navbar-link">Advandced</a></li> -->
+                       <li><a href="#" class="smoothScroll navbar-link">Quizes</a></li>
+                       <li><a href="#about" class="smoothScroll navbar-link">About</a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
@@ -64,11 +71,13 @@
                          <img src="images/site3.jpg" alt="" class="image" draggable="false">
                          <img src="images/site3.jpg" alt="" class="image" draggable="false">
                          <img src="images/site3.jpg" alt="" class="image" draggable="false">
-                         <img src="images/site3.jpg" alt="" class="image" draggable="false">
+                         <img src="images/site3.jpg" alt="" class="image" draggable="false">   
+                    </div>
+                    <div class="showcase-dir">
+                         <h1>Slide <i class="fa fa-chevron-right"></i></h1>    
                     </div>
                </div>         
-            </div>
-        </div>
+          </div>
     </section>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
