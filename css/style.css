@@ -406,7 +406,7 @@ a {
   list-style-type: none;
 }
 #home {
-    background: url('../images/home-bg.jpg') no-repeat center center;
+    background: url('../images/istockphoto-1341976416-170667a.jpg') no-repeat center center;
     background-size: cover;
     vertical-align: middle;
     display: flex;
@@ -480,6 +480,92 @@ a {
     transform: translate(0%, -50%);
 }
 
+@media (max-width:1366px){
+
+  .showcase h1{
+   left:462px;
+  }
+  
+ }
+ 
+ @media (max-width:1170px){
+ 
+  .showcase h1{
+   left:380px;
+  }
+  
+ }
+ 
+ @media (max-width:991px){
+ 
+  .showcase h1{
+   left:-142px;
+  }
+  
+ }
+ 
+ @media (max-width:900px){
+ 
+  .showcase h1{
+   left:-89px;
+  }
+  
+ }
+ 
+ @media (max-width:767px){
+ 
+  .showcase h1{
+   left:-370px;
+  }
+  
+ }
+ 
+ @media (max-width:639px){
+ 
+  .showcase h1{
+   left:-319px;
+  }
+  
+ }
+ 
+ @media (max-width:425px){
+ 
+  /* Logo */
+  .logo{
+   left:160px;
+  }
+  
+  .showcase h1{
+   left:-190px;
+  }
+  
+ }
+ 
+ @media (max-width:375px){
+ 
+  /* Logo */
+  .logo{
+   left:130px;
+  }
+  
+  .showcase h1{
+   left:-165px;
+  }
+  
+ }
+ 
+ @media (max-width:326px){
+ 
+  /* Logo */
+  .logo{
+   left:105px;
+  }
+  
+  .showcase h1{
+   left:-132px;
+  }
+  
+ }
 @media (max-width:991px){
   .showcase h1{
    left:-200px;
@@ -487,7 +573,6 @@ a {
   
  }
 
- /* Heading */
 .showcase h1{
   position:relative;
   top:-30px;
@@ -497,7 +582,6 @@ a {
  
  @media (max-width:1170px){
  
-  /* Heading */
   .showcase h1{
    left:380px;
   }
@@ -506,7 +590,6 @@ a {
  
  @media (max-width:991px){
  
-  /* Heading */
   .showcase h1{
    left:-142px;
    top:-30px;
@@ -516,7 +599,6 @@ a {
  
  @media (max-width:900px){
  
-  /* Heading */
   .showcase h1{
    left:-89px;
   }
@@ -525,12 +607,10 @@ a {
  
  @media (max-width:767px){
  
-  /* Heading */
   .showcase .container .row .showcase-dir h1{
    right:auto !important;
   }
   
-  /* Heading */
   .showcase h1{
    left:-371px;
   }
@@ -539,7 +619,6 @@ a {
  
  @media (max-width:639px){
  
-  /* Heading */
   .showcase h1{
    left:-319px;
   }
@@ -593,8 +672,11 @@ a {
     position: relative;
     cursor: pointer;
     border-radius: 3px;
+    
   }
-
+  #work{
+    background: #404241 !important;
+  }
   .work-thumb .work-info {
     position: absolute;
     top: 0px;
@@ -651,6 +733,33 @@ a {
   }
 
 
+/* ABOUT */
+
+#blog-header,
+  #blog-detail {
+    text-align: left;
+  }
+
+  #blog-header {
+    background: url('../images/site3.jpg') no-repeat center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 65vh;
+    color: #ffffff;
+    position: relative;
+    padding-top: 12em;
+  }
+
+  #blog-header h2 {
+    color: #fff !important;
+  }
 
 
 
