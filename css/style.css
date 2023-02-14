@@ -1,18 +1,19 @@
 /*  
-    ? Fonts: Poppins
+    * Fonts: Poppins, MTN Brighter Sans
     ? Color pallete 
     * (#478DDB) Dominant color
     * (#7E7FE8) Complementary color
     * (#EB5386) Accent color
-    * (#252525) Black */
+    * (#252525) Black 
+*/
 
 html{
+  scroll-behavior: smooth;
   scrollbar-width: normal;
   scrollbar-color: #fff var(--complementary);
 }
 *{
     box-sizing: border-box;
-    /* defining color-scheme */
     --black: #252525;
     --gradient: linear-gradient(to bottom, #478DDB, #7E7FE8, #EB5386);
     --accent: #EB5386;
@@ -29,7 +30,6 @@ html::-webkit-scrollbar-thumb{
   background-color: #7E7FE899;
   border-radius: 7px;
   border: .25em solid #fff;
-
 }
 html::-webkit-scrollbar-thumb:hover{
   background-color: #7E7FE8;
@@ -209,7 +209,7 @@ a {
   /*---------------------------------------
       MENU              
   -----------------------------------------*/
-  /* Logo */
+
   .logo{
     height:87px;
     transform:translateX(0px) translateY(-30px);
@@ -317,7 +317,6 @@ a {
       border-bottom: 0;
       background: 0 0; 
     }
-
     .custom-navbar.top-nav-collapse {
       background: #fff;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -326,15 +325,12 @@ a {
       padding: 12px 0;
       animation: ease 1s;
     }
-
     .top-nav-collapse .navbar-brand {
       color: var(--complementary) !important;
     }
-
     .top-nav-collapse .nav li a {
       color: var(--black);
     }
-
     .top-nav-collapse .nav .section-btn a {
       color: #fff;
     }
@@ -397,7 +393,6 @@ a {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
-
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
@@ -463,7 +458,7 @@ a {
     height: 65vmin;
     object-fit: cover;
     object-position: 50%;
-    user-drag: none;
+    /* user-drag: none; */
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -481,98 +476,72 @@ a {
 }
 
 @media (max-width:1366px){
-
   .showcase h1{
    left:462px;
   }
-  
  }
  
  @media (max-width:1170px){
- 
-  .showcase h1{
+   .showcase h1{
    left:380px;
   }
-  
  }
  
  @media (max-width:991px){
- 
   .showcase h1{
    left:-142px;
   }
-  
  }
  
  @media (max-width:900px){
- 
   .showcase h1{
    left:-89px;
   }
-  
  }
  
  @media (max-width:767px){
- 
   .showcase h1{
    left:-370px;
   }
-  
  }
  
  @media (max-width:639px){
- 
   .showcase h1{
    left:-319px;
   }
-  
  }
  
  @media (max-width:425px){
- 
-  /* Logo */
   .logo{
    left:160px;
   }
-  
   .showcase h1{
    left:-190px;
   }
-  
  }
  
  @media (max-width:375px){
- 
-  /* Logo */
   .logo{
    left:130px;
   }
-  
   .showcase h1{
    left:-165px;
   }
-  
  }
  
  @media (max-width:326px){
- 
-  /* Logo */
   .logo{
    left:105px;
   }
-  
   .showcase h1{
    left:-132px;
   }
-  
  }
 @media (max-width:991px){
   .showcase h1{
    left:-200px;
   }
-  
  }
-
 .showcase h1{
   position:relative;
   top:-30px;
@@ -581,48 +550,37 @@ a {
  }
  
  @media (max-width:1170px){
- 
   .showcase h1{
    left:380px;
   }
-  
  }
  
  @media (max-width:991px){
- 
   .showcase h1{
    left:-142px;
    top:-30px;
   }
-  
  }
  
  @media (max-width:900px){
- 
   .showcase h1{
    left:-89px;
   }
-  
  }
  
  @media (max-width:767px){
- 
   .showcase .container .row .showcase-dir h1{
    right:auto !important;
   }
-  
   .showcase h1{
    left:-371px;
   }
-  
  }
  
  @media (max-width:639px){
- 
   .showcase h1{
    left:-319px;
   }
-  
  }
 /*---------------------------------------
       ABOUT              
@@ -630,6 +588,7 @@ a {
   #about {
     text-align: left;
     padding-bottom: 0;
+    background-color: #40424115;
   }
 
   #about .about-info:first-child {
@@ -675,7 +634,7 @@ a {
     
   }
   #work{
-    background: #404241 !important;
+    background: #40424115 !important;
   }
   .work-thumb .work-info {
     position: absolute;
@@ -711,7 +670,7 @@ a {
     transform: translateY(100%);
     opacity: 0;
     display: block;
-    transition: 0.5s 0.2s;
+    transition: 0.5s;
     color: #fff;
     z-index: 2;
     position: relative;
@@ -735,13 +694,13 @@ a {
 
 /* ABOUT */
 
-#blog-header,
-  #blog-detail {
+#about-header,
+  #about-detail {
     text-align: left;
   }
 
-  #blog-header {
-    background: url('../images/site3.jpg') no-repeat center center;
+  #about-header {
+    background: url('../images/sigmund-OV44gxH71DU-unsplash.jpg') no-repeat center center;
     background-size: cover;
     display: -webkit-box;
     display: -webkit-flex;
@@ -752,14 +711,157 @@ a {
     -ms-flex-align: center;
     align-items: center;
     height: 65vh;
-    color: #ffffff;
+    color: #fff;
     position: relative;
     padding-top: 12em;
   }
 
-  #blog-header h2 {
+  #about-header h2 {
     color: #fff !important;
   }
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+/* .team .team-member {
+  overflow: hidden;
+  background: #fff;
+}
+
+.team .team-member .about-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.85);
+  change this ^ colour to var(--accent)
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a {
+  transition: color 0.3s;
+  color: var(--black) !important;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a i {
+  line-height: 1;
+  color: var(--black);
+}
+
+.team .team-member .social a:hover {
+  color: var(--accent);
+}
+
+.team .team-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .team-member .member-info {
+  padding: 25px 15px 0 15px;
+  text-align: center;
+}
+
+.team .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: var(--complementary);
+}
+
+.team .team-member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.team .team-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6c757d;
+}
+
+.team .team-member:hover .social {
+  opacity: 1;
+} */
+
+#work .about-img {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;  
+}
+
+.about-img .social {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-img .social:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  background: var(--accent);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.about-img .social:hover::after {
+  opacity: 0.9;
+}
+
+.about-img .social h3,
+.about-img .social small {
+  transform: translateY(100%);
+  opacity: 0;
+  display: block;
+  transition: 0.5s;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.about-img .social small {
+  color: #d9d9d9;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.about-img :hover .social h3,
+.about-img :hover .social small {
+  transform: translateY(0px);
+  opacity: 1;
+}
 
 
 
@@ -845,7 +947,6 @@ a {
     margin-left: 10px;
   }
 
-
   /*---------------------------------------
      SOCIAL ICONS           
   -----------------------------------------*/
@@ -880,64 +981,51 @@ a {
   -----------------------------------------*/
 
   @media screen and (max-width: 1170px) {
-
     .custom-navbar .navbar-nav.navbar-nav-first {
       margin-left: inherit;
     }
   }
 
   @media screen and (max-width: 991px) {
-
     h3 {
       font-size: 1.2em;
     }
-
     p {
       font-size: 13px;
     }
-
     #home {
       text-align: center;
     }
-
     .home-info {
       margin-bottom: 3em;
     }
-
     .custom-navbar .nav li a {
       font-size: 13px;
       padding-right: 11px;
       padding-left: 11px;
     }
-
     .custom-navbar .section-btn {
       margin-left: 1em;
     }
-
-    .blog-thumb {
+    .about-thumb {
       height: inherit;
     }
-
-    .blog-info {
+    .about-info {
       padding: 45px 25px;
     }
-
-    .media.blog-thumb .media-left {
+    .media.about-thumb .media-left {
       display: block;
       width: 100%;
       padding-right: 0;
       overflow: hidden;
     }
-
-    .media.blog-thumb .media-left {
+    .media.about-thumb .media-left {
       height: 250px;
     }
-
-    .media.blog-thumb .media-left img {
+    .media.about-thumb .media-left img {
       position: relative;
       bottom: 10em;
     }
-
     #work .work-thumb,
     .footer-thumb {
       margin-top: 20px;
@@ -946,23 +1034,19 @@ a {
   }
 
   @media only screen and (min-width: 640px) and (max-width: 767px) {
-
-    #blog-header {
+    #about-header {
       height: 100vh;
     }
-
-    .media.blog-thumb .media-left {
+    .media.about-thumb .media-left {
       height: 550px;
     }
-
-    .media.blog-thumb .media-left img {
+    .media.about-thumb .media-left img {
       position: relative;
       bottom: 10em;
     }
   }
 
   @media screen and (max-width: 767px) {
-
     .custom-navbar {
       background: #fff;
       -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -1025,22 +1109,17 @@ a {
   }
 
   @media screen and (max-width: 639px) {
-
     h1 {
       font-size: 2em;
     }
-
-    .media.blog-thumb .media-left {
+    .media.about-thumb .media-left {
       height: 320px;
     }
-
-    .media.blog-thumb .media-left img {
+    .media.about-thumb .media-left img {
       position: relative;
       bottom: 6em;
     }
-    
   }
-
 
   /*---------------------------------------
       MODAL FORM             
@@ -1138,7 +1217,6 @@ a {
   .modal-dialog form .form-control:focus {
     border-color: #fff;
   }
-
   .modal-dialog form input[type="submit"] {
     background: var(--accent);
     border-color: transparent;
@@ -1146,7 +1224,7 @@ a {
     color: #fff;
     margin-top: 20px;
   }
-/* showcase */
+
 .showcase-dir{
     align-items: center;
     justify-content: center;
@@ -1156,8 +1234,7 @@ a {
     color: #fff;
     position: fixed;
     transform: translate(9%, 30%);
-
 }
-.showcase-dir > h1 > i:hover{
-        
-}
+/* .showcase-dir > h1 > i:hover{
+    transform: translateX(3px);   
+} */
